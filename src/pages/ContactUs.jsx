@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
@@ -18,7 +18,8 @@ const ContactUs = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
       >
-        For more information or inquiries, feel free to reach out through the following channels:
+        For more information or inquiries, feel free to reach out through the
+        following channels:
       </motion.p>
       <motion.ul
         className="list-none mb-4"
@@ -27,16 +28,46 @@ const ContactUs = () => {
         transition={{ duration: 0.6, delay: 0.4 }}
       >
         <li className="mb-2">
-          <strong>Email:</strong> <a href="mailto:prashantmalviya272002@gmail.com" className="text-blue-400 hover:underline">prashantmalviya272002@gmail.com</a>
+          <strong>Email:</strong>{" "}
+          <a
+            href="mailto:prashantmalviya272002@gmail.com"
+            className="text-blue-400 hover:underline"
+          >
+            prashantmalviya272002@gmail.com
+          </a>
         </li>
         <li className="mb-2">
-          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prashant-malviya-57270b1b6/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">linkedin.com/in/prashant-malviya-57270b1b6</a>
+          <strong>LinkedIn:</strong>{" "}
+          <a
+            href="https://www.linkedin.com/in/prashant-malviya-57270b1b6/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            linkedin.com/in/prashant-malviya-57270b1b6
+          </a>
         </li>
         <li className="mb-2">
-          <strong>GitHub:</strong> <a href="https://github.com/Prashant-Malviya" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">github.com/Prashant-Malviya</a>
+          <strong>GitHub:</strong>{" "}
+          <a
+            href="https://github.com/Prashant-Malviya"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:underline"
+          >
+            github.com/Prashant-Malviya
+          </a>
         </li>
         <li className="mb-2">
-          <strong>Resume:</strong> <a href="https://drive.google.com/file/d/10QNipmLOKI-qTxjDkX1rlbj8JC0Qj2wU/view?usp=sharing" download className="text-blue-400 hover:underline" target="_blank">Download Resume</a>
+          <strong>Resume:</strong>{" "}
+          <a
+            href="https://drive.google.com/file/d/10QNipmLOKI-qTxjDkX1rlbj8JC0Qj2wU/view?usp=sharing"
+            download
+            className="text-blue-400 hover:underline"
+            target="_blank"
+          >
+            Download Resume
+          </a>
         </li>
       </motion.ul>
     </div>

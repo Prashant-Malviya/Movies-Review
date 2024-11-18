@@ -4,7 +4,7 @@ const searchSlice = createSlice({
   name: "search",
   initialState: {
     searchTerm: "",
-    movies: [], // Store fetched movies here
+    movies: [], 
   },
   reducers: {
     setSearchTerm: (state, action) => {
