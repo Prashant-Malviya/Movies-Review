@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { setMovies } from "../redux/slice/searchSlice";
 import axios from "axios";
 import { api_url } from "../api/api";
+import { RotatingLines } from "react-loader-spinner";
+import { div } from "framer-motion/client";
 
 const Movies = () => {
   const dispatch = useDispatch();
@@ -30,7 +32,19 @@ const Movies = () => {
             <MovieCard key={movie.id} movie={movie} />
           ))
         ) : (
-          <p className="text-center col-span-full">No movies found.</p>
+          <div className="w-full mx-auto my-auto">
+          <RotatingLines
+            visible={true}
+            height="96"
+            width="96"
+            color="blue"
+            strokeWidth="5"
+            animationDuration="0.75"
+            ariaLabel="rotating-lines-loading"
+            wrapperStyle={{}}
+            wrapperClass="center"
+          />
+          </div>
         )}
       </div>
     </div>
